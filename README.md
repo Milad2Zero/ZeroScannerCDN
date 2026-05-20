@@ -238,6 +238,90 @@ cp ScanResults.csv /sdcard/Download/
 
 ---
 
+# ساخت فایل targets.txt
+
+در Termux:
+
+```bash
+nano targets.txt
+```
+
+---
+
+# نمونه محتوا
+
+```text
+1.1.1.1
+8.8.8.8
+104.16.132.229
+```
+
+# پشتیبانی از CIDR
+
+```text
+104.16.0.0/24
+```
+
+# پشتیبانی از Range
+
+```text
+104.16.0.1-104.16.0.50
+```
+
+# پشتیبانی از URL
+
+```text
+https://example.com
+```
+
+---
+
+# ذخیره فایل در nano
+
+بعد از وارد کردن IP ها:
+
+```text
+CTRL + X
+Y
+ENTER
+```
+
+---
+
+# اجرای اسکن
+
+```bash
+python ZeroScannerCDN.py
+```
+
+---
+
+# استفاده از فایل دلخواه
+
+اگر کاربر فایل دیگری داشته باشد:
+
+```text
+mytargets.txt
+```
+
+هنگام اجرای اسکنر، نام فایل را وارد کند:
+
+```text
+IP list file [targets.txt]: mytargets.txt
+```
+
+---
+
+# انتقال فایل Target از حافظه گوشی
+
+مثلاً اگر فایل داخل Download باشد:
+
+```bash
+cp /sdcard/Download/mytargets.txt .
+```
+
+---
+
 # License
 
 MIT License
