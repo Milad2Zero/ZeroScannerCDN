@@ -45,7 +45,7 @@
 کلون کردن پروژه:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ZeroScannerCDN.git
+git clone https://github.com/Milad2Zero/ZeroScannerCDN
 cd ZeroScannerCDN
 ```
 
@@ -171,6 +171,9 @@ IP                RTT   TLS      HTTP   CDN               CONF
 ```bash
 pkg update
 pkg install python git
+git clone https://github.com/Milad2Zero/ZeroScannerCDN.git
+cd ZeroScannerCDN
+python ZeroScannerCDN.py
 ```
 
 اجرای اسکنر:
