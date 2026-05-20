@@ -56,7 +56,7 @@ cd ZeroScannerCDN
 اجرای اسکنر:
 
 ```bash
-python ZeroScannerCDN_v3_fixed.py
+python ZeroScannerCDN.py
 ```
 
 ---
@@ -176,7 +176,7 @@ pkg install python git
 اجرای اسکنر:
 
 ```bash
-python ZeroScannerCDN_v3_fixed.py
+python ZeroScannerCDN.py
 ```
 
 ---
