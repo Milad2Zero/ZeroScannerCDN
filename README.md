@@ -173,7 +173,6 @@ pkg update
 pkg install python git
 git clone https://github.com/Milad2Zero/ZeroScannerCDN.git
 cd ZeroScannerCDN
-python ZeroScannerCDN.py
 ```
 
 اجرای اسکنر:
@@ -182,15 +181,60 @@ python ZeroScannerCDN.py
 python ZeroScannerCDN.py
 ```
 
+# ذخیره و دسترسی به فایل نتایج در Termux
+
+بعد از پایان اسکن، فایل‌های زیر ساخته می‌شوند:
+
+```text
+OkTargets.txt
+ScanResults.csv
+```
+
+این فایل‌ها داخل پوشه پروژه ذخیره می‌شوند.
+
 ---
 
-# محدودیت‌ها
+# مشاهده فایل‌ها
 
-- شناسایی CDN مبتنی بر Heuristic است
-- برخی CDN ها Fingerprint خود را مخفی می‌کنند
-- HTTP/2 به‌صورت کامل پیاده‌سازی نشده
-- TLS Fingerprint Randomization پیشرفته وجود ندارد
-- سیستم‌های DPI پیشرفته همچنان ممکن است رفتار اسکن را تشخیص دهند
+نمایش فایل نتایج:
+
+```bash
+cat OkTargets.txt
+```
+
+یا:
+
+```bash
+cat ScanResults.csv
+```
+
+---
+
+# ذخیره در حافظه گوشی
+
+برای دسترسی به حافظه داخلی Android:
+
+```bash
+termux-setup-storage
+```
+
+سپس اجازه دسترسی را تایید کنید.
+
+---
+
+# انتقال فایل به حافظه داخلی گوشی
+
+کپی فایل نتایج به Downloads:
+
+```bash
+cp OkTargets.txt /sdcard/Download/
+```
+
+کپی فایل CSV:
+
+```bash
+cp ScanResults.csv /sdcard/Download/
+```
 
 ---
 
